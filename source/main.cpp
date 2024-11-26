@@ -11,9 +11,9 @@
 
 #include <coreinit/mcp.h>
 
-WUPS_PLUGIN_NAME("evWii 854 (cause 480 and 16:9 is 854x480)");
+WUPS_PLUGIN_NAME("evWii 854 (1920x1080viewport)");
 WUPS_PLUGIN_DESCRIPTION("Patches to enhance the vWii mode");
-WUPS_PLUGIN_VERSION("v0.2.854");
+WUPS_PLUGIN_VERSION("v0.2.854.19201080viewport");
 WUPS_PLUGIN_AUTHOR("GaryOderNichts_xbcx");
 WUPS_PLUGIN_LICENSE("GPLv2");
 
@@ -75,23 +75,23 @@ static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC_576i[] 
 static bool enable4sPower = true;
 
 static DMCUViewport dmcuTVViewport = {
-    { 0, 854, 854 },
-    { 0, 480, 480 },
+    { 0, 1920, 1920 },
+    { 0, 1080, 1080 },
 };
 
 static DMCUViewport dmcuTVViewport_576i = {
-    { 8, 704, 720 },
-    { 0, 576, 576 },
+    { 8, 1920, 1920 },
+    { 0, 1080, 1080 },
 };
 
 static DMCUViewport dmcuDRCViewport = {
-    { 0, 854, 854 },
-    { 0, 480, 480 },
+    { 0, 1920, 1920 },
+    { 0, 1080, 1080 },
 };
 
 static DMCUViewport dmcuDRCViewport_576i = {
-    { 0, 854, 854 },
-    { 0, 576, 576 },
+    { 0, 1920, 1920 },
+    { 0, 1080, 1080 },
 };
 
 void Patch_vWii_RTC_CONTROL1(void)
