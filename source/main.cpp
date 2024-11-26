@@ -33,6 +33,7 @@ struct DMCUViewport {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
+    { "854", { 0, 854, 854 } },
     { "720", { 0, 720, 720 } },
     { "704", { 8, 704, 720 } },
     { "640", { 40, 640, 720 } },
@@ -52,6 +53,7 @@ static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] =
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsDRC[] = {
+    { "854", { 0, 854, 854 } },
     { "720", { 0, 720, 720 } },
     { "704", { 8, 704, 720 } },
     { "640", { 40, 640, 720 } },
@@ -73,7 +75,7 @@ static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC_576i[] 
 static bool enable4sPower = true;
 
 static DMCUViewport dmcuTVViewport = {
-    { 8, 704, 720 },
+    { 0, 854, 854 },
     { 0, 480, 480 },
 };
 
@@ -83,12 +85,12 @@ static DMCUViewport dmcuTVViewport_576i = {
 };
 
 static DMCUViewport dmcuDRCViewport = {
-    { 8, 704, 720 },
+    { 0, 854, 854 },
     { 0, 480, 480 },
 };
 
 static DMCUViewport dmcuDRCViewport_576i = {
-    { 8, 704, 720 },
+    { 0, 854, 854 },
     { 0, 576, 576 },
 };
 
