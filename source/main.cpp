@@ -11,10 +11,10 @@
 
 #include <coreinit/mcp.h>
 
-WUPS_PLUGIN_NAME("evWii");
+WUPS_PLUGIN_NAME("evWii 854 (cause 480 and 16:9 is 854x480)");
 WUPS_PLUGIN_DESCRIPTION("Patches to enhance the vWii mode");
-WUPS_PLUGIN_VERSION("v0.2");
-WUPS_PLUGIN_AUTHOR("GaryOderNichts");
+WUPS_PLUGIN_VERSION("v0.2.854");
+WUPS_PLUGIN_AUTHOR("GaryOderNichts_xbcx");
 WUPS_PLUGIN_LICENSE("GPLv2");
 
 WUPS_USE_STORAGE("evWii");
