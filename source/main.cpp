@@ -11,9 +11,9 @@
 
 #include <coreinit/mcp.h>
 
-WUPS_PLUGIN_NAME("evWii 854 (1280viewport1280x720)");
+WUPS_PLUGIN_NAME("evWii moreRESOLUTIONS (4kviewport)");
 WUPS_PLUGIN_DESCRIPTION("Patches to enhance the vWii mode");
-WUPS_PLUGIN_VERSION("v0.2.854.1280viewport1280720");
+WUPS_PLUGIN_VERSION("v0.2.854.moreres4kview");
 WUPS_PLUGIN_AUTHOR("GaryOderNichts_xbcx");
 WUPS_PLUGIN_LICENSE("GPLv2");
 
@@ -33,11 +33,13 @@ struct DMCUViewport {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
-    { "1280", { 0, 1280, 1280 } },
-    { "854", { 0, 854, 854 } },
-    { "720", { 0, 720, 720 } },
-    { "704", { 8, 704, 720 } },
-    { "640", { 40, 640, 720 } },
+    { "3840", { 0, 3840, 3840 } },
+    { "1920", { 960, 1920, 3840 } },
+    { "1280", { 1280, 1280, 3840 } },
+    { "854", { 1493, 854, 3840 } },
+    { "720", { 1560, 720, 3840 } },
+    { "704", { 1568, 704, 3840 } },
+    { "640", { 1600, 640, 3840 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
@@ -56,48 +58,54 @@ static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] =
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsDRC[] = {
-    { "1280", { 0, 1280, 1280 } },
-    { "854", { 0, 854, 854 } },
-    { "720", { 0, 720, 720 } },
-    { "704", { 8, 704, 720 } },
-    { "640", { 40, 640, 720 } },
+    { "3840", { 0, 3840, 3840 } },
+    { "1920", { 960, 1920, 3840 } },
+    { "1280", { 1280, 1280, 3840 } },
+    { "854", { 1493, 854, 3840 } },
+    { "720", { 1560, 720, 3840 } },
+    { "704", { 1568, 704, 3840 } },
+    { "640", { 1600, 640, 3840 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC[] = {
-    { "720", { 0, 720, 720 } },
-    { "480", { 0, 480, 480 } },
+    { "2160", { 0, 2160, 2160 } },
+    { "1080", { 540, 1080, 2160 } },
+    { "720", { 720, 720, 2160 } },
+    { "480", { 840, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC_576i[] = {
-    { "720", { 0, 720, 720 } },
-    { "576", { 0, 576, 576 } },
-    { "528", { 24, 528, 576 } },
-    { "480", { 48, 480, 576 } },
+    { "2160", { 0, 2160, 2160 } },
+    { "1080", { 540, 1080, 2160 } },
+    { "720", { 720, 720, 2160 } },
+    { "576", { 792, 576, 2160 } },
+    { "528", { 816, 528, 2160 } },
+    { "480", { 840, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static bool enable4sPower = true;
 
 static DMCUViewport dmcuTVViewport = {
-    { 0, 1280, 1280 },
-    { 0, 720, 720 },
+    { 0, 3840, 3840 },
+    { 0, 2160, 2160 },
 };
 
 static DMCUViewport dmcuTVViewport_576i = {
-    { 0, 1280, 1280 },
-    { 0, 720, 720 },
+    { 0, 3840, 3840 },
+    { 0, 2160, 2160 },
 };
 
 static DMCUViewport dmcuDRCViewport = {
-    { 0, 1280, 1280 },
-    { 0, 720, 720 },
+    { 0, 3840, 3840 },
+    { 0, 2160, 2160 },
 };
 
 static DMCUViewport dmcuDRCViewport_576i = {
-    { 0, 1280, 1280 },
-    { 0, 720, 720 },
+    { 0, 3840, 3840 },
+    { 0, 2160, 2160 },
 };
 
 void Patch_vWii_RTC_CONTROL1(void)
