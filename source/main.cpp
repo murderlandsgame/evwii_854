@@ -33,40 +33,40 @@ struct DMCUViewport {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
-    { "3840", { 0, 3840, 3840 } },
-    { "1920", { 8, 3824, 3840 } },
-    { "1280", { 40, 3760, 3840 } },
+    { "3840", { 0, 720, 3840 } },
+    { "1920", { 8, 704, 3840 } },
+    { "1280", { 40, 640, 3840 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV[] = {
-    { "2160", { 0, 2160, 2160 } },
+    { "720", { 0, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] = {
-    { "2160", { 0, 2160, 2160 } },
-    { "1080", { 24, 2112, 2160 } },
-    { "720", { 48, 2064, 2160 } },
+    { "2160", { 0, 576, 2160 } },
+    { "1080", { 24, 528, 2160 } },
+    { "720", { 48, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsDRC[] = {
-    { "3840", { 0, 3840, 3840 } },
-    { "1920", { 8, 3824, 3840 } },
-    { "1280", { 40, 3760, 3840 } },
+    { "3840", { 0, 720, 3840 } },
+    { "1920", { 8, 704, 3840 } },
+    { "1280", { 40, 640, 3840 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC[] = {
-    { "2160", { 0, 2160, 2160 } },
+    { "720", { 0, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC_576i[] = {
-    { "2160", { 0, 2160, 2160 } },
-    { "1080", { 24, 2112, 2160 } },
-    { "720", { 48, 2064, 2160 } },
+    { "2160", { 0, 576, 2160 } },
+    { "1080", { 24, 528, 2160 } },
+    { "720", { 48, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
