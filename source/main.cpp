@@ -11,9 +11,9 @@
 
 #include <coreinit/mcp.h>
 
-WUPS_PLUGIN_NAME("evWii 854 (1920x1080viewport)");
+WUPS_PLUGIN_NAME("evWii 854 (1920viewport1280x720)");
 WUPS_PLUGIN_DESCRIPTION("Patches to enhance the vWii mode");
-WUPS_PLUGIN_VERSION("v0.2.854.19201080viewport");
+WUPS_PLUGIN_VERSION("v0.2.854.1920viewport1280720");
 WUPS_PLUGIN_AUTHOR("GaryOderNichts_xbcx");
 WUPS_PLUGIN_LICENSE("GPLv2");
 
@@ -33,6 +33,7 @@ struct DMCUViewport {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
+    { "1280", { 0, 1280, 1280 } },
     { "854", { 0, 854, 854 } },
     { "720", { 0, 720, 720 } },
     { "704", { 8, 704, 720 } },
@@ -41,11 +42,13 @@ static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV[] = {
+    { "720", { 0, 720, 720 } },
     { "480", { 0, 480, 480 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] = {
+    { "720", { 0, 720, 720 } },
     { "576", { 0, 576, 576 } },
     { "528", { 24, 528, 576 } },
     { "480", { 48, 480, 576 } },
@@ -53,6 +56,7 @@ static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] =
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsDRC[] = {
+    { "1280", { 0, 1280, 1280 } },
     { "854", { 0, 854, 854 } },
     { "720", { 0, 720, 720 } },
     { "704", { 8, 704, 720 } },
@@ -61,11 +65,13 @@ static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsDRC[] = {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC[] = {
+    { "720", { 0, 720, 720 } },
     { "480", { 0, 480, 480 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC_576i[] = {
+    { "720", { 0, 720, 720 } },
     { "576", { 0, 576, 576 } },
     { "528", { 24, 528, 576 } },
     { "480", { 48, 480, 576 } },
