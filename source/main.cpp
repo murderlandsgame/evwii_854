@@ -44,16 +44,20 @@ static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV[] = {
-    { "720", { 0, 720, 720 } },
-    { "480", { 0, 480, 480 } },
+    { "2160", { 0, 2160, 2160 } },
+    { "1080", { 540, 1080, 2160 } },
+    { "720", { 720, 720, 2160 } },
+    { "480", { 840, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] = {
-    { "720", { 0, 720, 720 } },
-    { "576", { 0, 576, 576 } },
-    { "528", { 24, 528, 576 } },
-    { "480", { 48, 480, 576 } },
+    { "2160", { 0, 2160, 2160 } },
+    { "1080", { 540, 1080, 2160 } },
+    { "720", { 720, 720, 2160 } },
+    { "576", { 792, 576, 2160 } },
+    { "528", { 816, 528, 2160 } },
+    { "480", { 840, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
