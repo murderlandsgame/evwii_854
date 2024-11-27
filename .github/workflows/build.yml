@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
-    - name: Build binary
+    - name: Build binary 4k broken
       run: |
         docker build -t evwii_builder .
         docker run --rm -v ${PWD}:/project evwii_builder make
