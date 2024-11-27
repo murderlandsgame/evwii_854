@@ -34,59 +34,39 @@ struct DMCUViewport {
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsTV[] = {
     { "3840", { 0, 3840, 3840 } },
-    { "1920", { 960, 1920, 3840 } },
-    { "1280", { 640, 1280, 3840 } },
-    { "854", { 427, 854, 3840 } },
-    { "720", { 360, 720, 3840 } },
-    { "704", { 352, 704, 3840 } },
-    { "640", { 320, 640, 3840 } },
+    { "1920", { 8, 3824, 3840 } },
+    { "1280", { 40, 3760, 3840 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV[] = {
     { "2160", { 0, 2160, 2160 } },
-    { "1080", { 540, 1080, 2160 } },
-    { "720", { 360, 720, 2160 } },
-    { "480", { 240, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsTV_576i[] = {
     { "2160", { 0, 2160, 2160 } },
-    { "1080", { 540, 1080, 2160 } },
-    { "720", { 360, 720, 2160 } },
-    { "576", { 288, 576, 2160 } },
-    { "528", { 264, 528, 2160 } },
-    { "480", { 240, 480, 2160 } },
+    { "1080", { 24, 2112, 2160 } },
+    { "720", { 48, 2064, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportWidthPresetsDRC[] = {
     { "3840", { 0, 3840, 3840 } },
-    { "1920", { 960, 1920, 3840 } },
-    { "1280", { 640, 1280, 3840 } },
-    { "854", { 427, 854, 3840 } },
-    { "720", { 360, 720, 3840 } },
-    { "704", { 352, 704, 3840 } },
-    { "640", { 320, 640, 3840 } },
+    { "1920", { 8, 3824, 3840 } },
+    { "1280", { 40, 3760, 3840 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC[] = {
     { "2160", { 0, 2160, 2160 } },
-    { "1080", { 540, 1080, 2160 } },
-    { "720", { 360, 720, 2160 } },
-    { "480", { 240, 480, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
 static std::pair<const char*, DMCUViewportAxis> viewportHeightPresetsDRC_576i[] = {
     { "2160", { 0, 2160, 2160 } },
-    { "1080", { 540, 1080, 2160 } },
-    { "720", { 360, 720, 2160 } },
-    { "576", { 288, 576, 2160 } },
-    { "528", { 264, 528, 2160 } },
-    { "480", { 240, 480, 2160 } },
+    { "1080", { 24, 2112, 2160 } },
+    { "720", { 48, 2064, 2160 } },
     { "Keep default", { 0xffff, 0xffff, 0xffff } }
 };
 
